@@ -1,0 +1,74 @@
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+:root {
+  --primary-color: #151716;
+  --secondary-color: #37b389;
+}
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .open-button:hover {
+    background-color: var(--secondary-color);
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container input[type=text], .form-container input[type=password] {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  .form-container h1 {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    font-size: 1.5rem;;
+  }
+  .form-container b {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+  }
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  .form-container .cancel {
+    background-color: red;
+  }
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
